@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zip Code Validator</title>
+</head>
+<body>
+
+
+  <script>
+   function zipCodeValidator(zipToValidate) {
+    if (parseInt(zipToValidate, 10) === NaN) {
+    return false;
+    } else if (zipToValidate.length === 5) {
+    return true;
+    } else {
+    return false;
+  }
+}
+
+console.log(zipCodeValidator('21594'));
+console.log(zipCodeValidator('3Eds32'));
+console.log(zipCodeValidator('9123465'));
+  </script>
+</body>
+</html>
